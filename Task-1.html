@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD App with Local Storage</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>CRUD App with Local Storage</h1>
+        <form id="user-form">
+            <label for="first-name">First Name</label>
+            <input type="text" id="first-name" required>
+
+            <label for="last-name">Last Name</label>
+            <input type="text" id="last-name" required>
+
+            <label>Gender</label>
+            <label> Male</label>
+            <input type="radio" name="gender" value="male" required>
+            <label> Female</label>
+            <input type="radio" name="gender" value="female" required>
+
+            <label for="address">Address</label>
+            <textarea id="address" required></textarea>
+
+            <label for="hobbies">Hobbies</label>
+            <select id="hobbies">
+                <option value="reading">Reading</option>
+                <option value="gardening">Gardening</option>
+                <option value="Writing">Writing</option>
+                <option value="Spirituality">Spirituality</option>
+                <option value="Performing">Performing</option>
+            </select>
+
+            <label for="country">Country</label>
+            <select id="country">
+                <option value="UK">UK</option>
+                <option value="India">India</option>
+                <option value="USA">USA</option>
+                <option value="Australia">Australia</option>
+            </select>
+
+            <label for="dob">Date of Birth</label>
+            <input type="date" id="dob" max="2023-08-18" required>
+
+            <button type="submit" id="submit-btn">Submit</button>
+        </form>
+
+        <div id="data-list">
+            <h2>User List</h2>
+            <ul id="users"></ul>
+        </div>
+    </div>
+
+    <script src="JS.js"></script>
+</body>
+
+</html>
